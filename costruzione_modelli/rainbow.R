@@ -4,9 +4,8 @@ library(tidyverse)
 library(caTools)
 library(randomForest)
 
-### Caricare le numerose palette 
-# esempio: caricare la palette rainbow
-rain <- rast("Desktop/cblind/rainbow1.png")
+### Caricare la palette rainbow
+rain <- rast("rainbow1.png")
 
 # Trasformare in dataframe e rinominare le colonne
 df_rain <- data.frame(rain)
