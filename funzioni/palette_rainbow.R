@@ -41,7 +41,7 @@ blue <- blue[with(blue, order(B, -R, -G)),]
 purple <- purple[with(purple, order(B, R, -G)),]
 
 # Assemblare il dataset ordinato per colore per ricolorarlo con la palette viridis
-fin <- rbind(red, yellow, green, lb, blue, purple)
+fin <- rbind(purple, blue, lb, green, yellow, red)
 fin <- cbind(fin, seq(1, nrow(fin)))
 colnames(fin)[ncol(fin)] <- "values"
 
