@@ -23,7 +23,7 @@ palette_rainbow <- function(im, cvd = c("protanopia", "deuteranopia", "tritanopi
  df_mod <- df_mod %>% mutate(R = as.character(R), G = as.character(G), B = as.character(B)) 
 
  # Richiamare il modello mdNNea
- mdNN <- load("mdNNea.RDS")
+ mdNN <- load("mdnew.RDS")
 
  # Predirre il colore e inserirlo nel dataframe
  colors <- predict(mdNN, df_mod[,c(3,4,5)], type="class")
