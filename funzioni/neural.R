@@ -1,4 +1,4 @@
-palette_rainbow <- function(im, cvd = c("protanopia", "deuteranopia", "tritanopia"), r = 1, g = 2, b = 3) {
+neural <- function(im, cvd = c("protanopia", "deuteranopia", "tritanopia"), r = 1, g = 2, b = 3) {
 
 #Controllo cvd
   cvd <- cvd[1]
